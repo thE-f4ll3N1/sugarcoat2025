@@ -2852,6 +2852,29 @@ label {
   inset: 0% 0% auto;
 }
 
+/* For Privacy page */
+body.privacy-policy .navbar {
+  background-color: #5d6c7b;
+  margin-top: 0px;
+  padding-top: 20px;
+}
+body.privacy-policy .heading {
+  padding-top: 25px;
+  padding-bottom: 5px;
+}
+
+/* For Terms */
+body.terms-conditions .navbar {
+  background-color: #5d6c7b;
+  margin-top: 0px;
+  padding-top: 20px;
+}
+body.terms-conditions .heading {
+  padding-top: 25px;
+  padding-bottom: 5px;
+}
+
+
 .n {
   z-index: 5;
   background-color: #0000;
