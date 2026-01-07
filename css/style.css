@@ -4764,6 +4764,57 @@ body.contact-us .heading {
   border-radius: 12px;
 }
 
+/* Mobile fab */
+/* Floating container */
+.mobile-fab {
+  position: fixed;
+  right: 16px;
+  bottom: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  z-index: 999;
+
+  /* Animation */
+  transform: translateY(80px);
+  opacity: 0;
+  transition: transform 0.4s ease, opacity 0.4s ease;
+}
+
+.mobile-fab.show {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.mobile-fab.hide {
+  transform: translateY(120px);
+  opacity: 0;
+}
+
+/* Buttons */
+.fab {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+}
+
+.fab.whatsapp { background: #25D366; }
+.fab.call { background: #111; }
+
+.fab img {
+  width: 26px;
+  height: 26px;
+}
+
+/* Mobile only */
+@media (min-width: 768px) {
+  .mobile-fab { display: none; }
+}
+
 
 #w-node-f52a1497-2735-f171-3c8d-6f49dfee458a-dc178eda, #w-node-_17a3ffb9-d2aa-c6bf-5ad0-e4adb40ce44f-dc178eda, #w-node-_953fa10b-5bac-8865-4e96-81ee900b4b3e-dc178eda {
   grid-area: span 1 / span 1 / span 1 / span 1;
