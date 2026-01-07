@@ -84,28 +84,32 @@
     "@type": "Place",
     "name": "Hennur, Kothanur, Bangalore"
   },
-  "serviceOffered": [
-    {
-      "@type": "Service",
-      "name": "Haircut and Hair Styling"
-    },
-    {
-      "@type": "Service",
-      "name": "Hair Botox and Keratin Treatment"
-    },
-    {
-      "@type": "Service",
-      "name": "Hair Colouring"
-    },
-    {
-      "@type": "Service",
-      "name": "Bridal and Party Makeup"
-    },
-    {
-      "@type": "Service",
-      "name": "Nail Art and Nail Extensions"
-    }
-  ]
+    "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Salon Services",
+    "itemListElement": [
+      {
+        "@type": "Service",
+        "name": "Haircut and Hair Styling"
+      },
+      {
+        "@type": "Service",
+        "name": "Hair Botox and Keratin Treatment"
+      },
+      {
+        "@type": "Service",
+        "name": "Hair Colouring"
+      },
+      {
+        "@type": "Service",
+        "name": "Bridal and Party Makeup"
+      },
+      {
+        "@type": "Service",
+        "name": "Nail Art and Nail Extensions"
+      }
+    ]
+  }
 }
 </script>
 </head>
@@ -124,11 +128,11 @@
                                 <li><a href="/#about" class="nav-link">About Us</a></li>
                                 <li><a href="/services" class="nav-link">Services & Pricing</a></li>
                                 <li><a href="/blog" class="nav-link">Blog</a></li>
-                                <li><a href="/contact-us" class="nav-link">Contact Us</a></li>
+                                <li><a href="/contact" class="nav-link">Contact Us</a></li>
                             </ul>
                         </nav>
                     </div>
-                    <div class="nav-button-wrapper"><a href="/contact-us" class="button-primary w-button">Book
+                    <div class="nav-button-wrapper"><a href="/contact" class="button-primary w-button">Book
                             Appointment</a></div>
                     <div class="menu-button w-nav-button">
                         <div class="menu-icon w-icon-nav-menu"></div>
@@ -218,9 +222,9 @@
               sizes="(max-width: 479px) 100vw, 186px" alt=""
               srcset="/assets/sc-logo-03-500.webp 500w, /assets/sc-logo-03-800.webp 800w, /assets/sc-logo-03-1080.webp 1080w, /assets/sc-logo-03-1600.webp 1600w, /assets/sc-logo-03-2000.webp 2000w, /assets/sc-logo-03-2600.webp 2600w, /assets/sc-logo-03-3200.webp 3200w, /assets/sc-logo-03.svg 3894w" /> -->
                     </a>
-                    <div class="footer-block-two"><a href="/#about" class="footer-link">About Us</a><a
-                            href="/services" class="footer-link">Services & Pricing</a><a href="/blog"
-                            class="footer-link">Blog</a><a href="/contact-us" class="footer-link">Contact Us</a>
+                    <div class="footer-block-two"><a href="/#about" class="footer-link">About Us</a><a href="/services"
+                            class="footer-link">Services & Pricing</a><a href="/blog" class="footer-link">Blog</a><a
+                            href="/contact" class="footer-link">Contact Us</a>
                     </div>
                     <div class="footer-block-two"><a class="footer-link">Popular Services</a>
                         <a href="/services/botox-treatment.html" class="footer-link-2">Botox Treatment</a><a
