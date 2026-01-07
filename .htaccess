@@ -7,3 +7,11 @@ RewriteRule ^services\.html$ /services [R=301,L]
 # Contact
 RewriteRule ^contact$ contact-us.html [L]
 RewriteRule ^contact-us\.html$ /contact [R=301,L]
+
+# Terms and Conditions
+RewriteRule ^terms-and-conditions$ terms-and-conditions.html [L]
+RewriteRule ^terms-and-conditions\.html$ /terms-and-conditions [R=301,L]
+
+# Privacy Policy
+RewriteRule ^privacy-policy$ privacy-policy.html [L]
+RewriteRule ^privacy-policy\.html$ /privacy-policy [R=301,L]
