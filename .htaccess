@@ -15,3 +15,7 @@ RewriteRule ^terms-and-conditions\.html$ /terms-and-conditions [R=301,L]
 # Privacy Policy
 RewriteRule ^privacy-policy$ privacy-policy.html [L]
 RewriteRule ^privacy-policy\.html$ /privacy-policy [R=301,L]
+
+# Blog
+RewriteRule ^blog$ blog.html [L]
+RewriteRule ^blog\.html$ /blog [R=301,L]
