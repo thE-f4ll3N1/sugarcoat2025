@@ -5,8 +5,8 @@ RewriteRule ^services$ services.html [L]
 RewriteRule ^services\.html$ /services [R=301,L]
 
 # Contact
-RewriteRule ^contact$ contact-us.html [L]
-RewriteRule ^contact-us\.html$ /contact [R=301,L]
+RewriteRule ^contact$ contact.html [L]
+RewriteRule ^contact\.html$ /contact [R=301,L]
 
 # Terms and Conditions
 RewriteRule ^terms-and-conditions$ terms-and-conditions.html [L]
