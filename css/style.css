@@ -224,7 +224,7 @@ body {
   background-color: #fff;
   min-height: 100%;
   margin: 0;
-  font-family: Arial, sans-serif;
+  font-family: "Source Sans 3", sans-serif;
   font-size: 14px;
   line-height: 20px;
 }
@@ -2185,7 +2185,7 @@ textarea.w-input, textarea.w-select {
 
 body {
   color: #333;
-  font-family: DM Sans, sans-serif;
+  font-family: Source Sans 3, sans-serif;
   font-size: 14px;
   line-height: 20px;
 }
@@ -2193,7 +2193,7 @@ body {
 h1 {
   margin-top: 20px;
   margin-bottom: 10px;
-  font-family: Baskervville, sans-serif;
+  font-family: Fjalla One, sans-serif;
   font-size: 38px;
   font-weight: 700;
   line-height: 44px;
@@ -2202,7 +2202,7 @@ h1 {
 h2 {
   margin-top: 20px;
   margin-bottom: 10px;
-  font-family: Baskervville, sans-serif;
+  font-family: Fjalla One, sans-serif;
   font-size: 38px;
   font-weight: 700;
   line-height: 44px;
@@ -2211,7 +2211,7 @@ h2 {
 h3 {
   margin-top: 20px;
   margin-bottom: 10px;
-  font-family: Baskervville, sans-serif;
+  font-family: Fjalla One, sans-serif;
   font-size: 50px;
   font-weight: 700;
   line-height: 50px;
@@ -2220,7 +2220,7 @@ h3 {
 h4 {
   margin-top: 20px;
   margin-bottom: 10px;
-  font-family: Baskervville, sans-serif;
+  font-family: Fjalla One, sans-serif;
   font-size: 24px;
   font-weight: 700;
   line-height: 30px;
@@ -2230,7 +2230,7 @@ h5 {
   color: #000;
   margin-top: 10px;
   margin-bottom: 10px;
-  font-family: Baskervville, sans-serif;
+  font-family: Fjalla One, sans-serif;
   font-size: 20px;
   font-weight: 700;
   line-height: 20px;
@@ -2239,7 +2239,7 @@ h5 {
 h6 {
   margin-top: 10px;
   margin-bottom: 10px;
-  font-family: Baskervville, sans-serif;
+  font-family: Fjalla One, sans-serif;
   font-size: 12px;
   font-weight: 700;
   line-height: 18px;
@@ -2261,7 +2261,7 @@ label {
 }
 
 .ud-body {
-  font-family: DM Sans, sans-serif;
+  font-family: Source Sans 3, sans-serif;
   line-height: 1.2em;
 }
 
@@ -2351,7 +2351,7 @@ label {
 .heading {
   color: var(--black);
   margin-top: 0;
-  font-family: Baskervville, sans-serif;
+  font-family: Fjalla One, sans-serif;
   font-weight: 700;
   line-height: .8;
 }
@@ -2826,7 +2826,7 @@ label {
 }
 
 .heading-2 {
-  font-family: Baskervville, sans-serif;
+  font-family: Fjalla One, sans-serif;
 }
 
 .bg-burlywood {
@@ -3275,7 +3275,7 @@ body.contact-us .heading {
 
 .price {
   color: var(--black-gray);
-  font-family: Baskervville, sans-serif;
+  font-family: Fjalla One, sans-serif;
   font-size: 40px;
   line-height: 1;
 }
@@ -3398,7 +3398,7 @@ body.contact-us .heading {
 .event-date {
   color: var(--white);
   text-align: center;
-  font-family: Baskervville, sans-serif;
+  font-family: Fjalla One, sans-serif;
   font-size: 56px;
   font-weight: 400;
   line-height: 1;
@@ -3538,7 +3538,7 @@ body.contact-us .heading {
 }
 
 .brand-title {
-  font-family: Baskervville, sans-serif;
+  font-family: Fjalla One, sans-serif;
   font-size: 40px;
   font-weight: 400;
   line-height: 1;
@@ -3870,7 +3870,7 @@ body.contact-us .heading {
     margin-left: 0;
     margin-right: 0;
     padding: 30px 20px;
-    font-family: Baskervville, sans-serif;
+    font-family: Fjalla One, sans-serif;
     font-size: 28px;
     display: block;
   }
