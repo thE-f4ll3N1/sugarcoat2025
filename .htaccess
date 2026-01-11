@@ -19,3 +19,7 @@ RewriteRule ^privacy-policy\.html$ /privacy-policy [R=301,L]
 # Blog
 RewriteRule ^blog$ blog.html [L]
 RewriteRule ^blog\.html$ /blog [R=301,L]
+
+# Homepage redirect
+RewriteEngine On
+RewriteRule ^index\.html$ / [R=301,L]
