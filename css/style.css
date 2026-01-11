@@ -2674,6 +2674,10 @@ label {
   margin-top: 40px;
 }
 
+.margin-top-20px {
+  margin-top: 20px;
+}
+
 ._3-grids {
   grid-column-gap: 40px;
   grid-template-rows: auto;
@@ -3173,6 +3177,10 @@ body.contact-us .heading {
 
 .margin-bottom-20px {
   margin-bottom: 20px;
+}
+
+.margin-bottom-10px {
+  margin-bottom: 10px;
 }
 
 .card-title {
@@ -4818,6 +4826,11 @@ body.contact-us .heading {
 /* Contact section */
 .section-wrapper-contact {
   margin-top: 50px ;
+}
+
+/* Button centre align */
+.align-button-center {
+  text-align: center;
 }
 
 #w-node-f52a1497-2735-f171-3c8d-6f49dfee458a-dc178eda, #w-node-_17a3ffb9-d2aa-c6bf-5ad0-e4adb40ce44f-dc178eda, #w-node-_953fa10b-5bac-8865-4e96-81ee900b4b3e-dc178eda {
