@@ -23,3 +23,17 @@ RewriteRule ^blog\.html$ /blog [R=301,L]
 # Homepage redirect
 RewriteEngine On
 RewriteRule ^index\.html$ / [R=301,L]
+
+#Individual blog pages specific
+# BLOG POSTS: Redirect .html to clean URL
+RewriteCond %{THE_REQUEST} \s/+blogs/([^\s]+)\.html [NC]
+RewriteRule ^ /blogs/%1 [L,R=301]
+
+# BLOG POSTS: Internally map clean URL to .html
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^blogs/([^/]+)/?$ blogs/$1.html [L]
+
+# BLOG POSTS: Remove trailing slash
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(blogs/.+)/$ /$1 [L,R=301]
