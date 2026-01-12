@@ -3105,6 +3105,10 @@ body.contact-us .heading {
   background-image: url("https://cdn.prod.website-files.com/687bd395d7f42e25dc178e93/687bd395d7f42e25dc178f0a_Rectangle%20dark.svg");
 }
 
+.subtitle.dark-title-grey {
+  background-image: url("/assets/blog/rectangle.svg");
+}
+
 .subtitle.margin-bottom-40px {
   font-family: "Source Sans 3", sans-serif;
 }
@@ -4831,6 +4835,46 @@ body.contact-us .heading {
 /* Button centre align */
 .align-button-center {
   text-align: center;
+}
+
+/* Breadcrumbs blog page */
+.breadcrumbs {
+  font-size: 14px;
+  margin: 16px 0;
+}
+
+.breadcrumbs ol {
+  list-style: none;
+  display: flex;
+  gap: 6px;
+  padding: 0;
+  margin: 0;
+}
+
+.breadcrumbs li::after {
+  content: "›";
+  margin-left: 6px;
+}
+
+.breadcrumbs li:last-child::after {
+  content: "";
+}
+
+.breadcrumbs a {
+  text-decoration: none;
+  color: #777;
+}
+
+.breadcrumbs li[aria-current="page"] {
+  color: #333;
+  font-weight: 500;
+}
+
+.breadcrumbs li[aria-current="page"] {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 280px;
 }
 
 #w-node-f52a1497-2735-f171-3c8d-6f49dfee458a-dc178eda, #w-node-_17a3ffb9-d2aa-c6bf-5ad0-e4adb40ce44f-dc178eda, #w-node-_953fa10b-5bac-8865-4e96-81ee900b4b3e-dc178eda {
