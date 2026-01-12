@@ -4841,14 +4841,25 @@ body.contact-us .heading {
 .breadcrumbs {
   font-size: 14px;
   margin: 16px 0;
+  counter-reset: none;
 }
 
 .breadcrumbs ol {
-  list-style: none;
-  display: flex;
-  gap: 6px;
+  display: flex !important;
+  flex-direction: row !important;
+  flex-wrap: nowrap !important;
+  list-style: none !important;
   padding: 0;
   margin: 0;
+}
+
+.breadcrumbs li {
+  display: inline-flex;
+  align-items: center;
+}
+
+.breadcrumbs li::marker {
+  content: "";
 }
 
 .breadcrumbs li::after {
