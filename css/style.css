@@ -4888,6 +4888,33 @@ body.contact-us .heading {
   max-width: 280px;
 }
 
+/* Blog content images */
+.blog-content img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 24px auto;
+  border-radius: 8px;
+}
+
+/* Portrait images */
+.blog-content img.portrait {
+  max-width: 520px;
+}
+
+/* Landscape images */
+.blog-content img.landscape {
+  max-width: 820px;
+}
+
+/* Mobile optimisation */
+@media (max-width: 768px) {
+  .blog-content img.portrait,
+  .blog-content img.landscape {
+    max-width: 100%;
+  }
+}
+
 #w-node-f52a1497-2735-f171-3c8d-6f49dfee458a-dc178eda, #w-node-_17a3ffb9-d2aa-c6bf-5ad0-e4adb40ce44f-dc178eda, #w-node-_953fa10b-5bac-8865-4e96-81ee900b4b3e-dc178eda {
   grid-area: span 1 / span 1 / span 1 / span 1;
 }
