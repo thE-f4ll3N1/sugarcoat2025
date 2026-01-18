@@ -3037,7 +3037,7 @@ body.contact-us .heading {
 }
 
 .section {
-  background-image: url("https://cdn.prod.website-files.com/687bd395d7f42e25dc178e93/687bd395d7f42e25dc178f09_lines.png");
+  /* background-image: url("https://cdn.prod.website-files.com/687bd395d7f42e25dc178e93/687bd395d7f42e25dc178f09_lines.png"); */
   background-position: 50%;
   background-repeat: repeat-x;
   background-size: auto;
@@ -3126,7 +3126,7 @@ body.contact-us .heading {
   z-index: 2;
   background-color: var(--white);
   color: #000;
-  background-image: url("https://cdn.prod.website-files.com/687bd395d7f42e25dc178e93/687bd395d7f42e25dc178f09_lines.png");
+  /* background-image: url("https://cdn.prod.website-files.com/687bd395d7f42e25dc178e93/687bd395d7f42e25dc178f09_lines.png"); */
   background-position: 50%;
   background-repeat: repeat-x;
   background-size: auto;
