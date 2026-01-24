@@ -3228,7 +3228,7 @@ body.contact-us .heading {
 }
 
 .margin-bottom-60px {
-  margin-bottom: 60px;
+  margin-bottom: 60px !important;
 }
 
 .margin-bottom-30px {
