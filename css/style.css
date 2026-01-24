@@ -3850,6 +3850,10 @@ body.contact-us .heading {
     grid-row-gap: 40px;
   }
 
+  ._2-grids.center-grid.no-gap-grid {
+    grid-row-gap: 10px;
+  }
+
   .navbar-wrapper {
     flex-wrap: nowrap;
     justify-content: space-between;
