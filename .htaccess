@@ -37,3 +37,16 @@ RewriteRule ^blogs/([^/]+)/?$ blogs/$1.html [L]
 # BLOG POSTS: Remove trailing slash
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteRule ^(blogs/.+)/$ /$1 [L,R=301]
+
+# SERVICES: Redirect .html to clean URL
+RewriteCond %{THE_REQUEST} \s/+services/([^\s]+)\.html [NC]
+RewriteRule ^ /services/%1 [L,R=301]
+
+# SERVICES: Internally map clean URL to .html
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^services/([^/]+)/?$ services/$1.html [L]
+
+# SERVICES: Remove trailing slash
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(services/.+)/$ /$1 [L,R=301]
