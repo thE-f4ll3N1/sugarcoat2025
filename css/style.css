@@ -4767,12 +4767,22 @@ body.contact-us .heading {
 
 /* For services backlinks */
 .menu-section-link {
-  color: #7a093880;
+  color: inherit;
   text-decoration: none;
   display: inline-block;
 }
 
 .menu-section-link:hover {
+  text-decoration: underline; /* optional, subtle */
+}
+
+.menu-section-link-blogs {
+  color: #7a093880;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.menu-section-link-blogs:hover {
   text-decoration: underline; /* optional, subtle */
 }
 
