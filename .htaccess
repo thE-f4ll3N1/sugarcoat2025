@@ -1,5 +1,9 @@
 RewriteEngine On
 
+#GSC error
+RewriteCond %{HTTP_HOST} ^www\.sugarcoatsalon\.in$ [NC]
+RewriteRule ^(.*)$ https://sugarcoatsalon.in/$1 [L,R=301]
+
 # Services
 RewriteRule ^services$ services.html [L]
 RewriteRule ^services\.html$ /services [R=301,L]
@@ -21,9 +25,9 @@ RewriteRule ^blog$ blog.html [L]
 RewriteRule ^blog\.html$ /blog [R=301,L]
 
 # Homepage redirect
-RewriteEngine On
 RewriteRule ^index\.html$ / [R=301,L]
 
+#BLOG PAGES
 #Individual blog pages specific
 # BLOG POSTS: Redirect .html to clean URL
 RewriteCond %{THE_REQUEST} \s/+blogs/([^\s]+)\.html [NC]
@@ -38,6 +42,7 @@ RewriteRule ^blogs/([^/]+)/?$ blogs/$1.html [L]
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteRule ^(blogs/.+)/$ /$1 [L,R=301]
 
+# SERVICE PAGES
 # SERVICES: Redirect .html to clean URL
 RewriteCond %{THE_REQUEST} \s/+services/([^\s]+)\.html [NC]
 RewriteRule ^ /services/%1 [L,R=301]
@@ -50,3 +55,10 @@ RewriteRule ^services/([^/]+)/?$ services/$1.html [L]
 # SERVICES: Remove trailing slash
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteRule ^(services/.+)/$ /$1 [L,R=301]
+
+# GSC LEGACY FIX
+Redirect 301 /services/nail-extensions.htmls /services/nail-extensions-gel-nail-polish-hennur-road-bangalore
+Redirect 301 /offers.html /
+Redirect 301 /about.html /
+Redirect 301 /contact-us.html /contact
+
