@@ -4349,7 +4349,7 @@ body.contact-us .heading {
 
   .button.bg-black-gray.button-below-menu {
     background-color: var(--sc_green);
-    color: #ec208a;
+    color: var(--sc_dark);
     font-family: "Source Sans 3", sans-serif;
     font-weight: 700;
   }
@@ -4369,7 +4369,7 @@ body.contact-us .heading {
 
   .menu-button {
     color: var(--white);
-    background-color: #ec208a;
+    background-color: #116f13;
     border-radius: 50%;
     margin-right: 0;
     padding: 8px;
