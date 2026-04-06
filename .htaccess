@@ -56,6 +56,20 @@ RewriteRule ^services/([^/]+)/?$ services/$1.html [L]
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteRule ^(services/.+)/$ /$1 [L,R=301]
 
+# OFFERS PAGES
+# OFFERS: Redirect .html to clean URL
+RewriteCond %{THE_REQUEST} \s/+offers/([^\s]+)\.html [NC]
+RewriteRule ^ /offers/%1 [L,R=301]
+
+# OFFERS: Internally map clean URL to .html
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^offers/([^/]+)/?$ offers/$1.html [L]
+
+# OFFERS: Remove trailing slash
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(offers/.+)/$ /$1 [L,R=301]
+
 # GSC LEGACY FIX
 Redirect 301 /services/nail-extensions.htmls /services/nail-extensions-gel-nail-polish-hennur-road-bangalore
 Redirect 301 /offers.html /
