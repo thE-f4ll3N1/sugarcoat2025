@@ -4816,7 +4816,92 @@ body.contact-us .heading {
   transform: translateY(120px);
   opacity: 0;
 }
+/* Floating Ends */
+/* Pop-up Starts */
+#sc-popup-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 9998;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  opacity: 0;
+  transition: opacity 0.35s ease;
+  backdrop-filter: blur(3px);
+}
 
+#sc-popup-overlay.sc-visible { opacity: 1; }
+#sc-popup-overlay.sc-hidden { display: none; }
+
+#sc-popup {
+  background: #fff;
+  border-radius: 6px;
+  overflow: hidden;
+  width: 100%;
+  max-width: 460px;
+  position: relative;
+  transform: translateY(18px);
+  transition: transform 0.35s ease;
+  box-shadow: 0 20px 60px rgba(0,0,0,0.35);
+}
+
+#sc-popup-overlay.sc-visible #sc-popup { transform: translateY(0); }
+
+#sc-popup::before {
+  content: '';
+  display: block;
+  height: 3px;
+  background: linear-gradient(90deg, #111, #3a7d44, #111);
+}
+
+#sc-popup-img-placeholder {
+  width: 100%;
+  height: 160px;
+  background: linear-gradient(135deg, #1a1a1a, #2d2d2d);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+#sc-popup-image {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  display: block;
+}
+
+#sc-popup-body { padding: 1.4rem; }
+
+#sc-popup-title {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.75rem;
+  margin-bottom: 0.5rem;
+}
+
+#sc-popup-desc {
+  font-size: 0.75rem;
+  color: #555;
+}
+
+#sc-popup-cta {
+  display: inline-block;
+  background: #111;
+  color: #fff;
+  padding: 0.7rem 1.4rem;
+  text-decoration: none;
+}
+
+#sc-popup-close {
+  position: absolute;
+  top: 0.7rem;
+  right: 0.7rem;
+  cursor: pointer;
+}
+/* Pop-up ends */
 /* Buttons */
 .fab {
   width: 56px;
