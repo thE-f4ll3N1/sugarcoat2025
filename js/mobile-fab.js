@@ -23,68 +23,45 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 });
 // Pop-up Starts
-(function () {
+window.addEventListener("load", function () {
 
-  var COMING_SOON_URL = 'YOUR_COMING_SOON_PAGE_URL';
-  var DELAY_MS = 2500;
-  var COOKIE_DAYS = 3;
+  if (window.innerWidth <= 767) {
 
-  function setCookie(name, value, days) {
-    var d = new Date();
-    d.setTime(d.getTime() + days * 864e5);
-    document.cookie = name + '=' + value + ';expires=' + d.toUTCString() + ';path=/';
-  }
+    if (!sessionStorage.getItem("scPopupShown")) {
 
-  function getCookie(name) {
-    var match = document.cookie.match(new RegExp('(^| )' + name + '=([^;]+)'));
-    return match ? match[2] : null;
-  }
+      const popup = document.getElementById("sc-popup-overlay");
 
-  function showPopup() {
-    var overlay = document.getElementById('sc-popup-overlay');
-    overlay.classList.remove('sc-hidden');
-    requestAnimationFrame(() => {
-      overlay.classList.add('sc-visible');
-    });
-  }
+      setTimeout(function () {
 
-  function hidePopup(dismiss) {
-    var overlay = document.getElementById('sc-popup-overlay');
-    overlay.classList.remove('sc-visible');
-    setTimeout(() => overlay.classList.add('sc-hidden'), 380);
+        popup.classList.remove("sc-hidden");
 
-    if (dismiss) setCookie('sc_popup_dismissed', '1', COOKIE_DAYS);
-  }
+        requestAnimationFrame(() => {
+          popup.classList.add("sc-visible");
+        });
 
-  function init() {
-    if (getCookie('sc_popup_dismissed')) return;
+      }, 1500);
 
-    var cta = document.getElementById('sc-popup-cta');
-    if (cta && COMING_SOON_URL !== 'YOUR_COMING_SOON_PAGE_URL') {
-      cta.href = COMING_SOON_URL;
+      sessionStorage.setItem("scPopupShown", "true");
     }
-
-    setTimeout(showPopup, DELAY_MS);
-
-    document.getElementById('sc-popup-close')
-      .addEventListener('click', () => hidePopup(false));
-
-    document.getElementById('sc-popup-dismiss')
-      .addEventListener('click', () => hidePopup(true));
-
-    document.getElementById('sc-popup-overlay')
-      .addEventListener('click', function (e) {
-        if (e.target === this) hidePopup(false);
-      });
-
-    document.addEventListener('keydown', function (e) {
-      if (e.key === 'Escape') hidePopup(false);
-    });
   }
 
-  document.readyState === 'loading'
-    ? document.addEventListener('DOMContentLoaded', init)
-    : init();
+  const closeBtn = document.getElementById("sc-popup-close");
 
-})();
+  if (closeBtn) {
+
+    closeBtn.addEventListener("click", function () {
+
+      const popup = document.getElementById("sc-popup-overlay");
+
+      popup.classList.remove("sc-visible");
+
+      setTimeout(() => {
+        popup.classList.add("sc-hidden");
+      }, 300);
+
+    });
+
+  }
+
+});
 // Pop-up Ends
