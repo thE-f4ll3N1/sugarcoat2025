@@ -4,6 +4,10 @@ RewriteEngine On
 RewriteCond %{HTTP_HOST} ^www\.sugarcoatsalon\.in$ [NC]
 RewriteRule ^(.*)$ https://sugarcoatsalon.in/$1 [L,R=301]
 
+# Events
+RewriteRule ^events$ events.html [L]
+RewriteRule ^events\.html$ /events [R=301,L]
+
 # Services
 RewriteRule ^services$ services.html [L]
 RewriteRule ^services\.html$ /services [R=301,L]
