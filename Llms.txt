@@ -36,6 +36,9 @@
 - [Facial & Skin Care](https://sugarcoatsalon.in/services/facial-skin-care-hennur-road-bangalore): Facials, cleanups, detan, waxing, body polishing and hydra facials
 - [Nail Extensions & Gel Polish](https://sugarcoatsalon.in/services/nail-extensions-gel-nail-polish-hennur-road-bangalore): Gel extensions, soft sets, gel polish and nail art
 - [Bridal & Party Makeup](https://sugarcoatsalon.in/services/bridal-makeup-party-makeup-hennur-road-bangalore): Bridal, HD, engagement, reception, party and photoshoot makeup
+- [Hair Spa](https://sugarcoatsalon.in/services/hair-spa-hennur-road-bangalore): Deep nourishment and scalp care for dry, damaged or chemically treated hair
+- [Hair Smoothening](https://sugarcoatsalon.in/services/hair-smoothening-hennur-road-bangalore): Smoothening treatment that reduces frizz and improves manageability
+- [Manicure & Pedicure](https://sugarcoatsalon.in/services/manicure-pedicure-hennur-road-bangalore): Nail shaping, cuticle care, exfoliation and relaxing hand and foot care
 
 ## Service Pages (Kothanur)
 
@@ -46,6 +49,9 @@
 - [Facial & Skin Care in Kothanur](https://sugarcoatsalon.in/services/facial-skin-care-kothanur-bangalore)
 - [Nail Extensions & Gel Polish in Kothanur](https://sugarcoatsalon.in/services/nail-extensions-gel-nail-polish-kothanur-bangalore)
 - [Bridal & Party Makeup in Kothanur](https://sugarcoatsalon.in/services/bridal-makeup-party-makeup-kothanur-bangalore)
+- [Hair Spa in Kothanur](https://sugarcoatsalon.in/services/hair-spa-kothanur-bangalore)
+- [Hair Smoothening in Kothanur](https://sugarcoatsalon.in/services/hair-smoothening-kothanur-bangalore)
+- [Manicure & Pedicure in Kothanur](https://sugarcoatsalon.in/services/manicure-pedicure-kothanur-bangalore)
 
 ## Blog Articles
 
@@ -96,6 +102,7 @@ Exact pricing depends on hair length, density and condition. Confirm with the sa
 - Do you offer bridal makeup? Yes: bridal, engagement, reception, party and photoshoot makeup, with trials on request.
 - Hair botox or keratin? Keratin straightens and smooths. Hair botox repairs and hydrates without straightening.
 - How do I book? WhatsApp or call +91 82965 45458, use the contact page, or walk in.
+- Hair spa or hair smoothening? Hair spa is regular nourishment and scalp care, usually every 2–4 weeks. Smoothening reduces frizz and makes hair easier to manage, and lasts until new growth comes in.
 
 ## Technical
 
