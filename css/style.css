@@ -4897,10 +4897,36 @@ body.contact-us .heading {
 
 #sc-popup-close {
   position: absolute;
+  top: 10px;
+  right: 10px;
+  z-index: 10;
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+  color: #111;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 1;
+  border-radius: 50%;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.45);
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+}
+
+#sc-popup-close:hover,
+#sc-popup-close:active {
+  background: #111;
+  color: #fff;
+}
+/* #sc-popup-close {
+  position: absolute;
   top: 0.7rem;
   right: 0.7rem;
   cursor: pointer;
-}
+} */
 /* Pop-up ends */
 /* Buttons */
 .fab {
